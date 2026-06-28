@@ -4,7 +4,6 @@
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
@@ -34,11 +33,11 @@
   block-size: calc((368 / 960) * 100vh);
 }
 
-.header-logo {
+.header__logo {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
-.header-title {
+.header__title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
 }
@@ -56,7 +55,7 @@
   overflow: hidden;
 }
 
-.card-title {
+.card__title {
   font-variation-settings: 'wght' var(--card-title-font-weight, 700);
   font-size: 18px;
   margin: 5px 10px ;
@@ -96,32 +95,36 @@
   block-size: 100%;
 }
 
-.second-image {
-  filter: grayscale(0.5);
-}
-
-.third-image {
-  filter: saturate(4.5);
-}
-
-.fourth-image {
-  filter: hue-rotate(50deg);
-}
-
-.fifth-image {
-  filter: invert(1) brightness(0.9);
-}
-
-.sixth-image {
-  filter: sepia(1);
-}
-
-.seventh-image {
+.first-image {
   filter: blur(5px);
 }
 
+.second-image {
+  filter: brightness(1.5);
+}
+
+.third-image {
+  filter: contrast(150%);
+}
+
+.fourth-image {
+  filter: grayscale(1);
+}
+
+.fifth-image {
+  filter: invert(1);
+}
+
+.sixth-image {
+  filter: saturate(2);
+}
+
+.seventh-image {
+  filter: sepia(0.5);
+}
+
 .eighth-image {
-  filter: hue-rotate(90deg) opacity(0.7) blur(2px);
+  filter: blur(4px) brightness(1.2) contrast(140%) saturate(1.3);
 }
 
 .card__description {
