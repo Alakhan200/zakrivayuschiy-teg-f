@@ -342,8 +342,12 @@
 }
 
 @media (max-width: 375px) {
+  .header__title {
+    font-size: 49px;
+  }
+
   .header__text {
-    font-size: clamp(14px, );
+    font-size: 14px;
   }
 
   .header {
