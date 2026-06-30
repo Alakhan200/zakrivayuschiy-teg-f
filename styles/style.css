@@ -294,10 +294,12 @@
 }
 
 .save-section__save-button {
-  line-height: 160%;
+  position: relative;
   display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 8px;
-  padding: 14px 18px;
+  padding: 15px 20px;
 }
 
 .save-button__text {
@@ -342,10 +344,6 @@
 }
 
 @media (max-width: 375px) {
-  .header__title {
-    font-size: 49px;
-  }
-
   .header__text {
     font-size: 14px;
   }
@@ -357,12 +355,11 @@
 
   .save-section__save-button {
     flex-direction: column;
-    align-items: center;
-    padding-block-end: 10px;
   }
 
   .save-section__save-button .floppy {
     width: 28px;
     height: 28px;
   }
+  
 }
